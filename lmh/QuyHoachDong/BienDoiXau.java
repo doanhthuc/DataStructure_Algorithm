@@ -12,7 +12,7 @@ public class BienDoiXau {
     void optimize() {
         // Lưu cơ cở quy hoạch động
         for (int i = 0; i <= n; i++) {
-            f[0][i] = 0;
+            f[0][i] = i;
         }
         for (int i = 0; i < m; i++) {
             f[i][0] = i;

@@ -17,7 +17,9 @@ int bfs(int startU, int startV)
 
     while (!qu.empty())
     {
-        auto [u, v] = qu.front();
+        auto x = qu.front();
+        int u = x.first;
+        int v = x.second;
         qu.pop();
         if (a[u][v] == 'B')
         {
